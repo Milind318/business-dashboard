@@ -9,7 +9,7 @@ function BusinessForm({ setBusinessData }) {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5000/business-data', { name, location });
+      const response = await axios.post('https://business-dashboard-1.onrender.com/business-data', { name, location });
       setBusinessData({ ...response.data, name, location });
     } catch (error) {
       console.error('Error fetching business data', error);
