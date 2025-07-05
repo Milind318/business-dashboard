@@ -38,7 +38,7 @@ function BusinessCard({ data, setBusinessData }) {
   const regenerateHeadline = async () => {
     try {
       setIsLoading(true);
-      const response = await axios.get(`http://localhost:5000/regenerate-headline`, {
+      const response = await axios.get(`https://business-dashboard-1.onrender.com/regenerate-headline`, {
         params: { name, location }
       });
 
